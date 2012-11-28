@@ -202,5 +202,11 @@
           transform:rotate(30deg);
 }
 
-.magnify.plus:after{content:'+';top:-3px;left:1px;}
+.magnify.plus:after {content:'+';top:-3px;left:1px;}
 .magnify.minus:after{content:'-';top:-3px;left:2px;}
+
+/*
+css hex chars
+no-break space = \00A0
+line feed      = \000A
+*/
