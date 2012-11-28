@@ -136,3 +136,36 @@
   position: absolute;
   left: 1px; top: 2px;
 }
+
+.file.new:before {
+  content: '+';
+  position: absolute;
+  top: 5px; left: 6px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  width:8px;height:8px;
+  background-color: #333;
+  border: #333 solid 1px;
+  border-radius: 50%;
+}
+
+.file.delete:before {
+  content: '+';
+  position: absolute;
+  top: 5px; left: 6px;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  text-align: center;
+  width:8px;height:8px;
+  background-color: #333;
+  border: #333 solid 1px;
+  border-radius: 50%;
+  -webkit-transform:rotate(-45deg);
+     -moz-transform:rotate(-45deg);
+      -ms-transform:rotate(-45deg);
+       -o-transform:rotate(-45deg);
+          transform:rotate(-45deg);
+}
