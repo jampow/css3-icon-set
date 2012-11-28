@@ -6,7 +6,7 @@
   height: 30px;
   float:left;
   margin: 5px;
-  /*border: solid 1px #ccc;*/
+  border: solid 1px #ccc;
 }
 
 .icon .triangle.right{position:absolute;top: 6px;left:9px;}
@@ -26,3 +26,7 @@
 .icon .balloon{position:absolute;top:3px;left:2px;}
 
 .icon .file{position:absolute;top:4px;left:7px;}
+
+.icon .magnify{position:absolute;top:5px;left:6px;}
+
+.icon .marker{position:absolute;top:3px;left:7px;}

@@ -205,6 +205,23 @@
 .magnify.plus:after {content:'+';top:-3px;left:1px;}
 .magnify.minus:after{content:'-';top:-3px;left:2px;}
 
+.marker {
+  position: absolute;
+  width:6px;height:6px;
+  border: #333 solid 5px;
+  border-radius: 50%;
+}
+
+.marker:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left:-4px;
+  border: transparent solid 7px;
+  border-top: #333 solid 14px;
+  border-bottom-width: 0;
+}
+
 /*
 css hex chars
 no-break space = \00A0
