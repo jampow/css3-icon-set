@@ -4,7 +4,7 @@
   height: 0;
   border-style: solid;
   border-color: transparent;
-  border-width: 9px;
+  border-width: 16px;
 }
 
 .triangle.right{border-left-color:  #333;border-right: 0;}
@@ -15,51 +15,10 @@
 .arrow {
   display: inline-block;
   border-style: solid;
-  border-left: 0;
-  border-top: 0;
-  width: 10px;
-  height: 10px;
-  margin: 15px;
   border-color:#333;
-  width: 10px; height: 10px;
-  border-width:4px;
-}
-
-.arrow.right{
-/*transform*/
--webkit-transform:rotate(-45deg);
-   -moz-transform:rotate(-45deg);
-    -ms-transform:rotate(-45deg);
-     -o-transform:rotate(-45deg);
-        transform:rotate(-45deg);
-}
-.arrow.left{
-/*transform*/
--webkit-transform:rotate(135deg);
-   -moz-transform:rotate(135deg);
-    -ms-transform:rotate(135deg);
-     -o-transform:rotate(135deg);
-        transform:rotate(135deg);
-}
-.arrow.up {
-/*transform*/
--webkit-transform:rotate(-135deg);
-   -moz-transform:rotate(-135deg);
-    -ms-transform:rotate(-135deg);
-     -o-transform:rotate(-135deg);
-        transform:rotate(-135deg);
-}
-.arrow.down{
-/*transform*/
--webkit-transform:rotate(45deg);
-   -moz-transform:rotate(45deg);
-    -ms-transform:rotate(45deg);
-     -o-transform:rotate(45deg);
-        transform:rotate(45deg);
-}
-
-.arrow.check {
-  width: 5px;
+  width: 16px; height: 16px;
+  border-width:8px;
+  /*transform*/
   -webkit-transform:rotate(45deg);
      -moz-transform:rotate(45deg);
       -ms-transform:rotate(45deg);
@@ -67,9 +26,20 @@
           transform:rotate(45deg);
 }
 
+.arrow.right{border-left: 0; border-bottom: 0;}
+.arrow.left{border-right: 0; border-top: 0;   }
+.arrow.up  {border-right: 0; border-bottom: 0;}
+.arrow.down {border-left: 0; border-top: 0;   }
+
+.arrow.check {
+  border-left: 0;
+  border-top: 0;
+  width: 10px; height: 20px
+}
+
 .x {
-  width:5px;
-  height:20px;
+  width:8px;
+  height:38px;
   background-color:#333;
   -webkit-transform:rotate(45deg);
      -moz-transform:rotate(45deg);
@@ -80,100 +50,105 @@
 .x:after {
   content: '';
   position:absolute;
-  top: 7px; left: -7px;
-  width:20px;
-  height:5px;
+  top: 15px; left: -15px;
+  width:38px;
+  height:8px;
   background-color:#333;
 }
 
 .balloon {
-  width: 20px;
-  height: 15px;
+  width: 32px;
+  height: 23px;
   background-color: #333;
   color:#fff;
-  margin: 3px
 }
 
 .balloon:after {
-  content: '====';
+  content: ' ---- \00A-------';
   letter-spacing: -3px;
-  font-size: 11px;
+  font-family: sans-serif;
+  font-size: 26px;
   position: absolute;
-  top: -2px; left: 3px;
+  line-height: 5px;
+  top: 3px; left: 3px;
 }
 
 .balloon:before {
   content: '';
-  border: solid #333 3px;
+  border: solid #333 5px;
   width: 0;
   height: 0;
   position: absolute;
-  top: 14px; left: 3px;
+  top: 22px; left: 4px;
   border-right-color: transparent;
   border-bottom-color: transparent;
 }
 
 .file {
-  border: solid #333 3px;
-  width: 10px;
-  height: 15px;
+  border: solid #333 5px;
+  width: 15px;
+  height: 22px;
 }
 
 .file:after {
   content: '';
   position: absolute;
-  top: -3px; right: -3px;
+  top: -5px; right: -5px;
   width: 0;
   height: 0;
-  border: #333 solid 4px;
+  border: #333 solid 6px;
   border-top-color: #fff;
   border-right-color: #fff;
 }
 
 .file:before {
-  content: '=';
-  font-size: 13px;
+  content: ' -- \00A----';
+  letter-spacing: -4px;
+  line-height: 4px;
+  font-family: sans-serif;
+  font-size: 26px;
   position: absolute;
-  left: 1px; top: 2px;
+  left: 1px; top: 6px;
 }
 
 .file.new:before {
-  content: '+';
+  content: '\271A';
   position: absolute;
-  top: 5px; left: 6px;
+  top: 9px; left: 12px;
+  font-family: sans-serif;
+  font-size: 10px;
   color: #fff;
-  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: 1px;
   font-weight: bold;
   text-align: center;
-  width:8px;height:8px;
+  width:10px;height:10px;
   background-color: #333;
   border: #333 solid 1px;
   border-radius: 50%;
 }
 
 .file.delete:before {
-  content: '+';
+  content: '\2716';
   position: absolute;
-  top: 5px; left: 6px;
+  top: 9px; left: 12px;
+  font-family: sans-serif;
+  font-size: 10px;
   color: #fff;
-  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: 1px;
   font-weight: bold;
   text-align: center;
-  width:8px;height:8px;
+  width:10px;height:10px;
   background-color: #333;
   border: #333 solid 1px;
   border-radius: 50%;
-  -webkit-transform:rotate(-45deg);
-     -moz-transform:rotate(-45deg);
-      -ms-transform:rotate(-45deg);
-       -o-transform:rotate(-45deg);
-          transform:rotate(-45deg);
 }
 
 .magnify {
-  border: #333 solid 3px;
+  border: #333 solid 5px;
   border-radius: 50%;
-  width: 8px; height: 8px;
+  width: 11px; height: 11px;
   position: absolute;
   -webkit-transform:rotate(-30deg);
      -moz-transform:rotate(-30deg);
@@ -184,17 +159,18 @@
 
 .magnify:before {
   content: '';
-  width: 3px;
-  height: 10px;
+  width: 5px;
+  height: 17px;
   position: absolute;
-  top:10px;left: 3px;
+  top:13px;left: 3px;
   background-color: #333;
 }
 
 .magnify:after {
   content: '';
   position:absolute;
-  font-size: 12px;
+  color: #333;
+  font-size: 10px;
   -webkit-transform:rotate(30deg);
      -moz-transform:rotate(30deg);
       -ms-transform:rotate(30deg);
@@ -202,28 +178,22 @@
           transform:rotate(30deg);
 }
 
-.magnify.plus:after {content:'+';top:-3px;left:1px;}
-.magnify.minus:after{content:'-';top:-3px;left:2px;}
+.magnify.plus:after {content:'\271A';top:0;left:1px;}
+.magnify.minus:after{content:'\2501';top:0;left:2px;}
 
 .marker {
   position: absolute;
-  width:6px;height:6px;
-  border: #333 solid 5px;
+  width:8px;height:8px;
+  border: #333 solid 6px;
   border-radius: 50%;
 }
 
 .marker:after {
   content: '';
   position: absolute;
-  top: 6px;
+  top: 10px;
   left:-4px;
-  border: transparent solid 7px;
-  border-top: #333 solid 14px;
+  border: transparent solid 8px;
+  border-top: #333 solid 17px;
   border-bottom-width: 0;
 }
-
-/*
-css hex chars
-no-break space = \00A0
-line feed      = \000A
-*/

@@ -1,32 +1,30 @@
-/*forget this file, you don't need this*/
-
 .icon {
   position:relative;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   float:left;
   margin: 5px;
   border: solid 1px #ccc;
 }
 
-.icon .triangle.right{position:absolute;top: 6px;left:9px;}
-.icon .triangle.left {position:absolute;top: 6px;left:9px;}
-.icon .triangle.up   {position:absolute;top:11px;left:6px;}
-.icon .triangle.down {position:absolute;top:11px;left:6px;}
+.icon .triangle.right{position:absolute;top: 0; left:8px;}
+.icon .triangle.left {position:absolute;top: 0; left:8px;}
+.icon .triangle.up   {position:absolute;top:8px;left:0;  }
+.icon .triangle.down {position:absolute;top:8px;left:0;  }
 
-.icon .arrow.right{position:absolute;top: -6px;left:-9px;}
-.icon .arrow.left {position:absolute;top: -6px;left:-5px;}
-.icon .arrow.up   {position:absolute;top: -4px;left:-7px;}
-.icon .arrow.down {position:absolute;top:-10px;left:-7px;}
+.icon .arrow.right{position:absolute;top: 4px; left:-1px;}
+.icon .arrow.left {position:absolute;top: 4px; left: 9px;}
+.icon .arrow.up   {position:absolute;top: 9px; left: 4px;}
+.icon .arrow.down {position:absolute;top: -1px;left: 4px;}
 
-.icon .arrow.check{position:absolute;top:-9px;left:-5px;}
+.icon .arrow.check{position:absolute;top:-2px;left:7px;}
 
-.icon .x{position:absolute;top:5px;left:12px;}
+.icon .x{position:absolute;top:-3px;left:12px;}
 
-.icon .balloon{position:absolute;top:3px;left:2px;}
+.icon .balloon{position:absolute;top:0;left:0;}
 
-.icon .file{position:absolute;top:4px;left:7px;}
+.icon .file{position:absolute;top:0;left:2px;}
 
-.icon .magnify{position:absolute;top:5px;left:6px;}
+.icon .magnify{position:absolute;top:0px;left:0px;}
 
-.icon .marker{position:absolute;top:3px;left:7px;}
+.icon .marker{position:absolute;top:0;left:6px;}
